@@ -1,0 +1,216 @@
+Lambda Execution Result (Latest Run):
+INIT_REPORT Init Duration: 9997.11 ms	Phase: init	Status: timeout
+
+=== Experiment Errors ===
+
+2025-09-22 03:28:52,383 - INFO - Starting LP Robust Conformal Prediction Experiment
+
+2025-09-22 03:28:52,384 - INFO - ============================================================
+
+2025-09-22 03:28:52,384 - INFO - Generating time series data with 1000 samples, shift after 700
+
+2025-09-22 03:28:52,385 - INFO - Time series data generation completed
+
+2025-09-22 03:28:52,385 - INFO - Data split: 499 calibration, 500 test
+
+2025-09-22 03:28:52,385 - INFO - Generated 498 forecasts with horizon 1
+
+2025-09-22 03:28:52,385 - INFO - Generated 499 forecasts with horizon 1
+
+2025-09-22 03:28:52,385 - INFO - Calculated 498 nonconformity scores
+
+2025-09-22 03:28:52,385 - INFO - Calculated 499 nonconformity scores
+
+2025-09-22 03:28:52,385 - INFO - 
+
+Testing ε=0.05, ρ=0.02
+
+2025-09-22 03:28:52,385 - INFO - ------------------------------
+
+2025-09-22 03:28:52,386 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.02
+
+2025-09-22 03:28:52,386 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-22 03:28:52,387 - INFO - Fitted model with 498 calibration scores
+
+2025-09-22 03:28:52,387 - INFO - Adjusted quantile level: 0.9218
+
+2025-09-22 03:28:52,387 - INFO - Final robust quantile: 1.0062
+
+2025-09-22 03:28:52,387 - INFO - Generated predictions for 499 test samples
+
+2025-09-22 03:28:52,387 - INFO - Empirical coverage: 0.7876 (target: 0.9)
+
+2025-09-22 03:28:52,387 - INFO - Worst-case coverage at quantile 1.0062: 0.9017
+
+2025-09-22 03:28:52,387 - INFO - Results: Empirical Coverage=0.7876, Worst-Case=0.9017, Quantile=1.0062
+
+2025-09-22 03:28:52,387 - INFO - 
+
+Testing ε=0.05, ρ=0.05
+
+2025-09-22 03:28:52,387 - INFO - ------------------------------
+
+2025-09-22 03:28:52,387 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.05
+
+2025-09-22 03:28:52,387 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-22 03:28:52,387 - INFO - Fitted model with 498 calibration scores
+
+2025-09-22 03:28:52,388 - INFO - Adjusted quantile level: 0.9519
+
+2025-09-22 03:28:52,388 - INFO - Final robust quantile: 1.0858
+
+2025-09-22 03:28:52,388 - INFO - Generated predictions for 499 test samples
+
+2025-09-22 03:28:52,388 - INFO - Empirical coverage: 0.8176 (target: 0.9)
+
+2025-09-22 03:28:52,388 - INFO - Worst-case coverage at quantile 1.0858: 0.9018
+
+2025-09-22 03:28:52,388 - INFO - Results: Empirical Coverage=0.8176, Worst-Case=0.9018, Quantile=1.0858
+
+2025-09-22 03:28:52,388 - INFO - 
+
+Testing ε=0.05, ρ=0.1
+
+2025-09-22 03:28:52,388 - INFO - ------------------------------
+
+2025-09-22 03:28:52,388 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.1
+
+2025-09-22 03:28:52,388 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-22 03:28:52,388 - ERROR - Error fitting model: Quantiles must be in the range [0, 1]
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "2025-09-22 03:28:52,383 - INFO - Starting LP Robust Conformal Prediction Experiment\n2025-09-22 03:28:52,384 - INFO - ============================================================\n2025-09-22 03:28:52,384 - INFO - Generating time series data with 1000 samples, shift after 700\n2025-09-22 03:28:52,385 - INFO - Time series data generation completed\n2025-09-22 03:28:52,385 - INFO - Data split: 499 calibration, 500 test\n2025-09-22 03:28:52,385 - INFO - Generated 498 forecasts with horizon 1\n2025-09-22 03:28:52,385 - INFO - Generated 499 forecasts with horizon 1\n2025-09-22 03:28:52,385 - INFO - Calculated 498 nonconformity scores\n2025-09-22 03:28:52,385 - INFO - Calculated 499 nonconformity scores\n2025-09-22 03:28:52,385 - INFO - \nTesting \u03b5=0.05, \u03c1=0.02\n2025-09-22 03:28:52,385 - INFO - ------------------------------\n2025-09-22 03:28:52,386 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.02\n2025-09-22 03:28:52,386 - INFO - Fitting LP robust conformal prediction model...\n2025-09-22 03:28:52,387 - INFO - Fitted model with 498 calibration scores\n2025-09-22 03:28:52,387 - INFO - Adjusted quantile level: 0.9218\n2025-09-22 03:28:52,387 - INFO - Final robust quantile: 1.0062\n2025-09-22 03:28:52,387 - INFO - Generated predictions for 499 test samples\n2025-09-22 03:28:52,387 - INFO - Empirical coverage: 0.7876 (target: 0.9)\n2025-09-22 03:28:52,387 - INFO - Worst-case coverage at quantile 1.0062: 0.9017\n2025-09-22 03:28:52,387 - INFO - Results: Empirical Coverage=0.7876, Worst-Case=0.9017, Quantile=1.0062\n2025-09-22 03:28:52,387 - INFO - \nTesting \u03b5=0.05, \u03c1=0.05\n2025-09-22 03:28:52,387 - INFO - ------------------------------\n2025-09-22 03:28:52,387 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.05\n2025-09-22 03:28:52,387 - INFO - Fitting LP robust conformal prediction model...\n2025-09-22 03:28:52,387 - INFO - Fitted model with 498 calibration scores\n2025-09-22 03:28:52,388 - INFO - Adjusted quantile level: 0.9519\n2025-09-22 03:28:52,388 - INFO - Final robust quantile: 1.0858\n2025-09-22 03:28:52,388 - INFO - Generated predictions for 499 test samples\n2025-09-22 03:28:52,388 - INFO - Empirical coverage: 0.8176 (target: 0.9)\n2025-09-22 03:28:52,388 - INFO - Worst-case coverage at quantile 1.0858: 0.9018\n2025-09-22 03:28:52,388 - INFO - Results: Empirical Coverage=0.8176, Worst-Case=0.9018, Quantile=1.0858\n2025-09-22 03:28:52,388 - INFO - \nTesting \u03b5=0.05, \u03c1=0.1\n2025-09-22 03:28:52,388 - INFO - ------------------------------\n2025-09-22 03:28:52,388 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.1\n2025-09-22 03:28:52,388 - INFO - Fitting LP robust conformal prediction model...\n2025-09-22 03:28:52,388 - ERROR - Error fitting model: Quantiles must be in the range [0, 1]\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 8631.76 ms	Phase: invoke	Status: error	Error Type: Runtime.ExitError
+
+START RequestId: 2f315733-80da-4985-b15a-80a77bd00432 Version: $LATEST
+
+RequestId: 2f315733-80da-4985-b15a-80a77bd00432 Error: Runtime exited without providing a reason
+Runtime.ExitError
+
+END RequestId: 2f315733-80da-4985-b15a-80a77bd00432
+
+REPORT RequestId: 2f315733-80da-4985-b15a-80a77bd00432	Duration: 8633.97 ms	Billed Duration: 8634 ms	Memory Size: 3008 MB	Max Memory Used: 96 MB	
+
+=== Experiment Errors ===
+
+2025-09-22 03:28:53,346 - INFO - Starting LP Robust Conformal Prediction Experiment
+
+2025-09-22 03:28:53,346 - INFO - ============================================================
+
+2025-09-22 03:28:53,346 - INFO - Generating time series data with 1000 samples, shift after 700
+
+2025-09-22 03:28:53,347 - INFO - Time series data generation completed
+
+2025-09-22 03:28:53,348 - INFO - Data split: 499 calibration, 500 test
+
+2025-09-22 03:28:53,348 - INFO - Generated 498 forecasts with horizon 1
+
+2025-09-22 03:28:53,348 - INFO - Generated 499 forecasts with horizon 1
+
+2025-09-22 03:28:53,348 - INFO - Calculated 498 nonconformity scores
+
+2025-09-22 03:28:53,348 - INFO - Calculated 499 nonconformity scores
+
+2025-09-22 03:28:53,348 - INFO - 
+
+Testing ε=0.05, ρ=0.02
+
+2025-09-22 03:28:53,348 - INFO - ------------------------------
+
+2025-09-22 03:28:53,348 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.02
+
+2025-09-22 03:28:53,348 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-22 03:28:53,348 - INFO - Fitted model with 498 calibration scores
+
+2025-09-22 03:28:53,348 - INFO - Adjusted quantile level: 0.9218
+
+2025-09-22 03:28:53,349 - INFO - Final robust quantile: 1.0062
+
+2025-09-22 03:28:53,349 - INFO - Generated predictions for 499 test samples
+
+2025-09-22 03:28:53,349 - INFO - Empirical coverage: 0.7876 (target: 0.9)
+
+2025-09-22 03:28:53,349 - INFO - Worst-case coverage at quantile 1.0062: 0.9017
+
+2025-09-22 03:28:53,349 - INFO - Results: Empirical Coverage=0.7876, Worst-Case=0.9017, Quantile=1.0062
+
+2025-09-22 03:28:53,349 - INFO - 
+
+Testing ε=0.05, ρ=0.05
+
+2025-09-22 03:28:53,349 - INFO - ------------------------------
+
+2025-09-22 03:28:53,349 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.05
+
+2025-09-22 03:28:53,349 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-22 03:28:53,349 - INFO - Fitted model with 498 calibration scores
+
+2025-09-22 03:28:53,349 - INFO - Adjusted quantile level: 0.9519
+
+2025-09-22 03:28:53,349 - INFO - Final robust quantile: 1.0858
+
+2025-09-22 03:28:53,349 - INFO - Generated predictions for 499 test samples
+
+2025-09-22 03:28:53,349 - INFO - Empirical coverage: 0.8176 (target: 0.9)
+
+2025-09-22 03:28:53,349 - INFO - Worst-case coverage at quantile 1.0858: 0.9018
+
+2025-09-22 03:28:53,349 - INFO - Results: Empirical Coverage=0.8176, Worst-Case=0.9018, Quantile=1.0858
+
+2025-09-22 03:28:53,349 - INFO - 
+
+Testing ε=0.05, ρ=0.1
+
+2025-09-22 03:28:53,349 - INFO - ------------------------------
+
+2025-09-22 03:28:53,350 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.1
+
+2025-09-22 03:28:53,350 - INFO - Fitting LP robust conformal prediction model...
+
+2025-09-22 03:28:53,350 - ERROR - Error fitting model: Quantiles must be in the range [0, 1]
+
+{
+
+"experimentStatusCode": 500,
+
+"body": {
+
+"message": "Experiment failed",
+
+"returncode": 1,
+
+"stdout": "",
+
+"stderr": "2025-09-22 03:28:53,346 - INFO - Starting LP Robust Conformal Prediction Experiment\n2025-09-22 03:28:53,346 - INFO - ============================================================\n2025-09-22 03:28:53,346 - INFO - Generating time series data with 1000 samples, shift after 700\n2025-09-22 03:28:53,347 - INFO - Time series data generation completed\n2025-09-22 03:28:53,348 - INFO - Data split: 499 calibration, 500 test\n2025-09-22 03:28:53,348 - INFO - Generated 498 forecasts with horizon 1\n2025-09-22 03:28:53,348 - INFO - Generated 499 forecasts with horizon 1\n2025-09-22 03:28:53,348 - INFO - Calculated 498 nonconformity scores\n2025-09-22 03:28:53,348 - INFO - Calculated 499 nonconformity scores\n2025-09-22 03:28:53,348 - INFO - \nTesting \u03b5=0.05, \u03c1=0.02\n2025-09-22 03:28:53,348 - INFO - ------------------------------\n2025-09-22 03:28:53,348 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.02\n2025-09-22 03:28:53,348 - INFO - Fitting LP robust conformal prediction model...\n2025-09-22 03:28:53,348 - INFO - Fitted model with 498 calibration scores\n2025-09-22 03:28:53,348 - INFO - Adjusted quantile level: 0.9218\n2025-09-22 03:28:53,349 - INFO - Final robust quantile: 1.0062\n2025-09-22 03:28:53,349 - INFO - Generated predictions for 499 test samples\n2025-09-22 03:28:53,349 - INFO - Empirical coverage: 0.7876 (target: 0.9)\n2025-09-22 03:28:53,349 - INFO - Worst-case coverage at quantile 1.0062: 0.9017\n2025-09-22 03:28:53,349 - INFO - Results: Empirical Coverage=0.7876, Worst-Case=0.9017, Quantile=1.0062\n2025-09-22 03:28:53,349 - INFO - \nTesting \u03b5=0.05, \u03c1=0.05\n2025-09-22 03:28:53,349 - INFO - ------------------------------\n2025-09-22 03:28:53,349 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.05\n2025-09-22 03:28:53,349 - INFO - Fitting LP robust conformal prediction model...\n2025-09-22 03:28:53,349 - INFO - Fitted model with 498 calibration scores\n2025-09-22 03:28:53,349 - INFO - Adjusted quantile level: 0.9519\n2025-09-22 03:28:53,349 - INFO - Final robust quantile: 1.0858\n2025-09-22 03:28:53,349 - INFO - Generated predictions for 499 test samples\n2025-09-22 03:28:53,349 - INFO - Empirical coverage: 0.8176 (target: 0.9)\n2025-09-22 03:28:53,349 - INFO - Worst-case coverage at quantile 1.0858: 0.9018\n2025-09-22 03:28:53,349 - INFO - Results: Empirical Coverage=0.8176, Worst-Case=0.9018, Quantile=1.0858\n2025-09-22 03:28:53,349 - INFO - \nTesting \u03b5=0.05, \u03c1=0.1\n2025-09-22 03:28:53,349 - INFO - ------------------------------\n2025-09-22 03:28:53,350 - INFO - Initialized LP Conformal Prediction with alpha=0.1, epsilon=0.05, rho=0.1\n2025-09-22 03:28:53,350 - INFO - Fitting LP robust conformal prediction model...\n2025-09-22 03:28:53,350 - ERROR - Error fitting model: Quantiles must be in the range [0, 1]\n",
+
+"execution_time": null
+
+}
+
+}
+
+INIT_REPORT Init Duration: 926.44 ms	Phase: init	Status: error	Error Type: Runtime.ExitError
+
